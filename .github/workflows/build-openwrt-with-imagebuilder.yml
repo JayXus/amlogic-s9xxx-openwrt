@@ -18,13 +18,17 @@ on:
         default: "openwrt:22.03.3"
         type: choice
         options:
+          - openwrt:22.03.5
+          - openwrt:22.03.4
           - openwrt:22.03.3
+          - openwrt:21.02.7
+          - openwrt:21.02.6
           - openwrt:21.02.5
           - openwrt:19.07.10
           - openwrt:18.06.9
+          - immortalwrt:21.02.6
           - immortalwrt:21.02.5
           - immortalwrt:21.02.4
-          - immortalwrt:21.02.3
       openwrt_board:
         description: "Select device board"
         required: false
@@ -33,6 +37,7 @@ on:
         options:
           - all
           - s922x_s905x3_s905d_s912_s905l3a
+          - s905x-t95_s912-t95z-plus_s905l3-unt400g1
           - s905d
           - s905d-ki-pro
           - s905x
