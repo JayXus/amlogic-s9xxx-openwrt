@@ -9,6 +9,9 @@
 # Add a feed source
 # sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 
+echo "src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git" >> "feeds.conf.default"
+echo "src-git passwall_package https://github.com/xiaorouji/openwrt-passwall-packages" >> "feeds.conf.default"
+
 # other
 # rm -rf package/emortal/{autosamba,ipv6-helper}
 
